@@ -1,0 +1,13 @@
+header{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2:hover{
+    color: pink;
+}
+h3::first-letter{
+    color: blue;
+}
