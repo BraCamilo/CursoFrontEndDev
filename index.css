@@ -11,3 +11,7 @@ h2:hover{
 h3::first-letter{
     color: blue;
 }
+#ejTBloque{
+    background-color: aqua;
+    text-align: center;
+}
