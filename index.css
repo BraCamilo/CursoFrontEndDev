@@ -1,3 +1,7 @@
+body{
+    background-color: gray;
+}
+
 header{
     background-color: azure;
     display: flex;
@@ -14,4 +18,18 @@ h3::first-letter{
 #ejTBloque{
     background-color: aqua;
     text-align: center;
+}
+#ejInlineInline{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#etInline{
+    background-color: violet;
+    color: black;
+    margin: 5px;
+}
+#etInlineBlock{
+    background-color: aquamarine;
+    color: white;
 }
