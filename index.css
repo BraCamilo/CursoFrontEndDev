@@ -3,33 +3,46 @@ body{
 }
 
 header{
-    background-color: azure;
+    background-color: rgb(63, 63, 63);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 h2:hover{
-    color: pink;
+    color: rgb(162, 162, 162);
 }
 h3::first-letter{
-    color: blue;
+    color: rgb(2, 2, 63);
 }
 #ejTBloque{
-    background-color: aqua;
+    background-color: rgb(2, 81, 81);
+    margin: 5px;
     text-align: center;
 }
 #ejInlineInline{
     display: flex;
+    margin: 5px;
     flex-direction: column;
     text-align: center;
 }
 #etInline{
-    background-color: violet;
+    background-color: rgb(51, 1, 51);
     color: black;
     margin: 5px;
 }
 #etInlineBlock{
-    background-color: aquamarine;
-    color: white;
+    background-color: rgb(39, 77, 64);
+    color: rgb(39, 39, 39);
+}
+#etInlineBlock:hover{
+    background-color: rgb(69, 134, 112);
+}
+article{
+    background-color: teal;
+    display: flex;/*Que no se olvide aplicar tecnologia flex, antes de usar sus propiedades*/
+    flex-direction: row-reverse;
+}
+aside{
+    margin: 5px;
 }
