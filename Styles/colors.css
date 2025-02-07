@@ -1,0 +1,15 @@
+:root {
+    --fondoGeneral: #f4f4f4;
+    --headerColor: #1e3a8a;
+    --hoverH2: #3b82f6;
+    --primerLetraH3: #9333ea;
+    --bloqueColor: #0f766e;
+    --inlineContainer: #14b8a6;
+    --inlineColor: #7c3aed;
+    --inlineBlockColor: #2563eb;
+    --inlineBlockHover: #3b82f6;
+    --articleColor: #1e293b;
+    --asideColor: #e2e8f0;
+    --textLight: white;
+    --textDark: black;
+}

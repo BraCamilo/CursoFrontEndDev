@@ -1,48 +1,76 @@
-body{
-    background-color: gray;
+@import "/Styles/colors.css";
+body {
+    background-color: var(--fondoGeneral);
 }
 
-header{
-    background-color: rgb(63, 63, 63);
+header {
+    background-color: var(--headerColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--textLight);
 }
-h2:hover{
-    color: rgb(162, 162, 162);
+
+h2:hover {
+    color: var(--hoverH2);
 }
-h3::first-letter{
-    color: rgb(2, 2, 63);
+
+h3::first-letter {
+    color: var(--primerLetraH3);
 }
-#ejTBloque{
-    background-color: rgb(2, 81, 81);
+
+#ejTBloque {    
+    padding: 5px;
+    background-color: var(--bloqueColor);
     margin: 5px;
+    align-self: center;/*Esta es una buena opción para alinear las cosas al centro verticalmente cuando son elementos hijo*/ 
     text-align: center;
+    color: var(--textLight);
+    justify-content: center;
 }
-#ejInlineInline{
+
+#ejInlineInline {
     display: flex;
     margin: 5px;
     flex-direction: column;
     text-align: center;
 }
-#etInline{
-    background-color: rgb(51, 1, 51);
-    color: black;
+
+#etInline {
+    background-color: var(--inlineColor);
+    color: var(--textLight);
     margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
 }
-#etInlineBlock{
-    background-color: rgb(39, 77, 64);
-    color: rgb(39, 39, 39);
+
+#etInlineBlock {
+    background-color: var(--inlineBlockColor);
+    color: var(--textLight);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
 }
-#etInlineBlock:hover{
-    background-color: rgb(69, 134, 112);
+
+#etInlineBlock:hover {
+    background-color: var(--inlineBlockHover);
 }
-article{
-    background-color: teal;
-    display: flex;/*Que no se olvide aplicar tecnologia flex, antes de usar sus propiedades*/
+
+article {
+    background-color: var(--articleColor);
+    display: flex;
     flex-direction: row-reverse;
+    padding: 10px;
+    border-radius: 8px;
 }
-aside{
+
+aside {
+    background-color: var(--asideColor);
     margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--textDark);
 }
