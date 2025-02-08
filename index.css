@@ -74,3 +74,23 @@ aside {
     border-radius: 5px;
     color: var(--textDark);
 }
+section{
+    display: flex;
+    justify-content: center;
+}
+#gridEj{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.inosuke{
+    grid-column: 2 / 4;
+    width: min-content;
+    height: min-content;
+}
+
