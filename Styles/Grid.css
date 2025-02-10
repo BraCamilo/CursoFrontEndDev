@@ -16,6 +16,7 @@ section{
     text-align: left;
 }
 #contenido{
+    
     border: 2px solid black;
     display: grid;
     width: 200px;

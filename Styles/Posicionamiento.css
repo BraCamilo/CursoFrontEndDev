@@ -1,1 +1,44 @@
 @import "/Styles/Colors.css";
+
+#Posicionamiento{
+    display: flex;
+    flex-direction: column;
+}
+.ejposicion{
+    width: 100%;
+    height: 100%;
+    background-color: var(--fondoGeneral2);    
+    position: relative;
+    padding: 10px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+.ejposicion p {
+    white-space: pre-wrap; /* Mantiene saltos de línea y ajusta el texto */
+    word-wrap: break-word;  /* Rompe palabras largas si es necesario */
+    line-height: 1.5;       /* Mejora la separación entre líneas */
+}
+
+.posicion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.container{
+    background-color: papayawhip;
+}
+.item{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 10px;
+}
+.item:nth-child(2){
+    left: 50px;
+}
+
+.item:nth-child(3){
+    left: 100px;
+}
+
