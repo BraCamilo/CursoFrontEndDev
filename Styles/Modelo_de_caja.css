@@ -1,0 +1,35 @@
+@import "/Styles/Colors.css";
+
+
+#modelo_de_caja{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 2px solid var(--inlineColor);
+    padding: 30px;
+}
+
+#modelo_de_caja_Grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.teoria{
+    color: var(--textLight);
+    box-shadow: 1px 1px 5px var(--inlineColor);
+    margin: 10px;
+    padding: 30px;
+}
+h4{
+    text-align: center;
+}
+#ejMC{
+    color: var(--textLight);
+    margin: 5px;    
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    
+    
+    
+}

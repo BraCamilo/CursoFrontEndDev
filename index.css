@@ -1,11 +1,17 @@
 @import "/Styles/Colors.css";
 @import "/Styles/Grid.css";
 @import "/Styles/Flexbos.css";
+@import "/Styles/estilos.css";
+@import "/Styles/Modelo_de_caja.css";
+@import "/Styles/Posicionamiento.css";
 
 
 
 
 
 body {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
     background-color: var(--fondoGeneral);
 }

@@ -1,0 +1,17 @@
+@import "/Styles/Colors.css";
+
+header {
+    background-color: var(--headerColor);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--textLight);
+}
+
+#section0{
+    background-color: var(--fondoGeneral);
+    display: flex;
+    flex-direction: column;
+}

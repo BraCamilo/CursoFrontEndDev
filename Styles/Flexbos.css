@@ -1,12 +1,4 @@
-header {
-    background-color: var(--headerColor);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--textLight);
-}
-
+@import "/Styles/Colors.css";
 h2:hover {
     color: var(--hoverH2);
 }
