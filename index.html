@@ -26,8 +26,31 @@
         </aside>
     </article>
     <section>
-        <div id="gridEj">
+        <div class="notasGrid">
+            <p>🔹 display: grid; → Convierte #contenido en un contenedor de CSS Grid.</p>
+            <p>🔹 width: 200px; height: 200px; → Define el tamaño total de la cuadrícula.</p>
+            <p>🔹 grid-template-columns: 1fr 1fr 1fr 1fr; → Crea 4 columnas de tamaño igual.</p>
+            <p>🔹 grid-template-rows: 1fr 1fr 1fr 1fr; → Crea 4 filas de tamaño igual.</p>
         </div>
-    </section>    
+        <div class="separador">
+            ➡
+        </div>
+        <div id="contenido">
+            <img class="item" src="/src/zenithsuChibi.jpg" alt="">
+            <img class="item" src="/src/InosukeChibi.jpg" alt="">
+            <img class="item" src="/src/tanjiroChibi.jpeg" alt="">
+        </div>
+        <div class="separador">
+            ⬅
+        </div>
+        <div class="notasGrid">
+            <h1>Ajuste de imágenes dentro del grid</h1>
+            <div class="code"> #contenido img {
+                width: 100%;
+                height: 100%;
+            }
+            </div>
+        </div>
+    </section>
 </body>
 </html>
