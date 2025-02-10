@@ -1,15 +1,17 @@
 :root {
-    --fondoGeneral: #f4f4f4;
-    --headerColor: #1e3a8a;
-    --hoverH2: #3b82f6;
-    --primerLetraH3: #9333ea;
-    --bloqueColor: #0f766e;
-    --inlineContainer: #14b8a6;
-    --inlineColor: #7c3aed;
-    --inlineBlockColor: #2563eb;
-    --inlineBlockHover: #3b82f6;
-    --articleColor: #1e293b;
-    --asideColor: #e2e8f0;
-    --textLight: white;
-    --textDark: black;
+    --fondoGeneral: #1f202e; /* Negro azulado profundo */
+    --headerColor: #0E1626; /* Azul oscuro elegante */
+    --hoverH2: #4D5159; /* Gris oscuro sofisticado */
+    --primerLetraH3: #A6A59F; /* Gris claro con un tono cálido */
+    --bloqueColor: #0E1626; /* Manteniendo el azul oscuro para bloques */
+    --inlineContainer: #D9D4C5; /* Beige claro para balancear */
+    --inlineColor: #A6A59F; /* Gris claro para destacar sin ser brillante */
+    --inlineBlockColor: #4D5159; /* Gris oscuro para bloques inline */
+    --inlineBlockHover: #A6A59F; /* Resaltado con gris claro */
+    --articleColor: #00010D; /* Fondo negro para un look moderno */
+    --asideColor: #D9D4C5; /* Beige claro para secciones secundarias */
+    --textLight: #D9D4C5; /* Texto claro para fondos oscuros */
+    --textDark: #00010D; /* Texto oscuro para fondos claros */
 }
+
+
