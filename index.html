@@ -30,7 +30,7 @@
     <header id="header2">
         <h1>Este es un ejemplo de uso de la tecnología Grid</h1>
     </header>
-    <section>
+    <section id="notasGrid">
         <div class="notasGrid">
             <p>🔹 display: grid; → Convierte #contenido en un contenedor de CSS Grid.</p>
             <p>🔹 width: 200px; height: 200px; → Define el tamaño total de la cuadrícula.</p>
@@ -41,9 +41,9 @@
             ➡
         </div>
         <div id="contenido">
-            <img class="item" src="/src/zenithsuChibi.jpg" alt="">
             <img class="item" src="/src/InosukeChibi.jpg" alt="">
             <img class="item" src="/src/tanjiroChibi.jpeg" alt="">
+            <img class="item" src="/src/zenithsuChibi.jpg" alt="">
         </div>
         <div class="separador">
             ⬅
@@ -71,14 +71,12 @@
                 <p>Asi mismo existen diferentes formas de personalizar estos valores.                     Por ejemplo:
                 </p>
                 <p>
-                    <pre>
-                        ej{
-                            margin-top: 100px;
-                            margin-bottom: 100px;
-                            margin-right: 150px;
-                            margin-left: 80px;
-                        }
-                    </pre>
+                    ej{
+                        margin-top: 100px;
+                        margin-bottom: 100px;
+                        margin-right: 150px;
+                        margin-left: 80px;
+                    }
                 </p>
 
                 <p>Y así mismo también se puede con las dimenciones de el Border y el Padding<br>
@@ -98,17 +96,55 @@
         <header>
             <h3>Ahora vamos a hablar sobre posicionamiento</h3>
         </header>
-        <div class="ejposicion">
-            <h4>Posicionamiento relativo o {relative}</h4>
-            <div class="posicion">                
-                <p>Este tipo de posicionamiento consta de dar ubicación a los elementos según el estado que se le indique, es decir que No sera ni un posicionamiento quieto, que no se pueda mover, ni un posicionamiento aleatorio</p>
-                <div class="container">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
+        <article><!--Relative-->
+            <div class="ejposicion">
+                <h4>Posicionamiento relativo o {relative}</h4>
+                <div class="posicion">
+                    <div>
+                        <p>Este tipo de posicionamiento consta de dar ubicación a los elementos según el estado que se le indique, es decir que No sera ni un posicionamiento quieto, que no se pueda mover, ni un posicionamiento aleatorio</p>
+                    <p>Por ejemplo acá en el ejemplo de la derecha podemos evidenciar que estamos haciendo uso de propiedades de relative en los items 1, 2 y 3. A los cuales se les aplico unas propiedades exactas que indican donde se ubican.</p>
+                    </div>
+                    <div id="Pcode">
+                        <pre class="code">
+     .itemP{
+         width: 20px;
+         height: 20px;
+         background-color: red;
+         <b><mark>position: relative;</mark></b>
+         top: 10px;
+         color: var(--textLight);
+         text-align: center;
+         align-items: center;
+     }
+     .itemP:nth-child(2){
+         left: 50px;
+     }
+     
+     .itemP:nth-child(3){
+         left: 100px;
+     }
+                        </pre>                                                
+                        <p>Y acá podemos ver los estilos que se estarían aplicando, dónde ".itemP:nth-child(2)" hace referencia al item 2 y así sucesivamente</p>
+                    </div>
+                    <div class="container">
+                        <div class="itemP">1</div>
+                        <div class="itemP">2</div>
+                        <div class="itemP">3</div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>
+        <article id="articleAbsolute"><!--Absolute-->
+            <p><b>Posicionamiento absolute</b></p><div>
+            <div class="teoria">
+                    <p>El posicionamiento absoluto (`absolute`) permite mover un elemento utilizando `top`, `right`, `bottom` y `left`. Sin embargo, es importante tener en cuenta que <b>un elemento con `position: absolute` se posicionará en relación con su ancestro más cercano que tenga un posicionamiento diferente de `static`</b>. Si no encuentra un ancestro con `position: relative`, `absolute`, `fixed` o `sticky`, el elemento se posicionará en relación con el `<html>` o el `<body>`.</p>
+            </div>
+            <div id="muestra">
+                <div id="absoluteEjs">
+                    <div class="itemAbs"></div>
+                </div>
+            </div>
+        </article>        
     </section>
 </body>
 </html>

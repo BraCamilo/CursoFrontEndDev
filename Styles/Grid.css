@@ -16,7 +16,6 @@ section{
     text-align: left;
 }
 #contenido{
-    
     border: 2px solid black;
     display: grid;
     width: 200px;
@@ -25,17 +24,20 @@ section{
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px;
     margin: 5px;
-    padding: 5px;
+    padding: 5px;   
 }
 #contenido img{
     width: 100%;
     height: 100%;
 }
+.item:nth-child(1){
+    grid-area: 3/3;
+}
 .item:nth-child(2){
-    grid-area: 3 / 3;
+    grid-area: 2/2;
 }
 .item:nth-child(3){
-    grid-area: 2 / 2;
+    grid-area: 1/1;
 }
 .separador {
     margin: 5px;
