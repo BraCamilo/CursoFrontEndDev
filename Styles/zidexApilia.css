@@ -1,0 +1,47 @@
+@import "/Styles/Colors.css";
+
+#z-indexSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    color: var(--textLight);
+}
+p{
+    color: var(--textLight);
+}
+#z-index{
+    display: flex;
+    flex-direction: column;
+}
+#z-indexEjs{
+    background-color: aqua;
+    padding: 20px;
+    position: relative;
+    width: 200px;
+    height: 110px;
+}
+#item1Z{
+    background-color: bisque;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    left: 45%;
+    top: 68%;
+    bottom: 68%;
+    right: 68%;
+}
+#item2Z{
+    background-color: blueviolet;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+}
