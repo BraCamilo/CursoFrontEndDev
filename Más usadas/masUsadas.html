@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+
+        }
+        .card{
+            width: 300px;
+            height: 500px;
+            background-color: rgb(41, 40, 38);
+            border-radius: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align:center;
+            position: relative;
+        }
+        /*Overflow-hiden esconde lo que se salga del contenedor*/
+        #Perfil{
+            margin-top: 50px;
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            z-index: 2;
+            position: absolute;
+            top: 15%;
+            left: 33%;
+            border: 5px solid outset;
+            box-sizing: border-box;
+        }
+        #fondo{
+            width: 100%;
+            border-radius: 20px;
+            z-index: 1;
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <h1>propiedades y valores de CSS más usados</h1>
+        <div class="card">
+            <div>
+                <img id="fondo" src="/src/fondo.jpeg" alt="">
+            </div>
+            <img id="Perfil" src="/src/WhatsApp Image 2025-02-06 at 4.46.55 PM.jpeg" alt="">            
+        <p>Brayan Camilo</p>
+        </div>
+        
+    </section>    
+</body>
+</html>
