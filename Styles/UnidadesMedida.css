@@ -1,0 +1,58 @@
+@import "/Styles/Colors.css";
+
+/* html{
+    font-size: 62.5%;
+} */
+
+#opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#UniMedidas{
+    width: 100%;
+    margin: 20px;
+}
+#AbyRe{
+    color: white;
+    display: grid;
+    align-self: flex-start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    height: 200px;
+    
+}
+.titulos{
+    text-align: center;
+    border: 2px solid var(--inlineColor);
+    padding: 20px;
+    
+}
+.unidades{
+    padding: 10px;
+    align-self: center;
+    border: 2px solid var(--inlineColor);
+}
+#AbyRe:nth-child(1){
+    grid-area: 1 /1;
+}
+#AbyRe:nth-child(2){
+    grid-area: 1 /2;
+}
+#AbyRe:nth-child(3){
+    grid-area: 2 /1;
+}
+#AbyRe:nth-child(4){
+    grid-area: 2 /2;
+}
+.unidades{
+    box-sizing: border-box;
+}
+#unTeoria{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}

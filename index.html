@@ -95,6 +95,9 @@
     <section id="Posicionamiento">
         <header>
             <h3>Ahora vamos a hablar sobre posicionamiento</h3>
+            <h4>
+                <a href="/Pocicionamiento/tuturialPoci.html">Si deseas acá hay un tutorial más ordenado y completo</a>
+            </h4>
         </header>
         <article><!--Relative-->
             <div class="ejposicion">
@@ -160,7 +163,52 @@
                     <div id="item2Z"></div>
                 </div>
             </section>
-        </article>   
+        </article> 
+        <h3>Mediciones</h3>
+        <article id="UniMedidas"><!--Unidades de medida-->
+            <Section id="opciones">
+                <div id="AbyRe">
+                    <div class="titulos">Absolutos</div>
+                    <div class="titulos">Relativos</div>
+                    <div class="unidades">
+                        <ul >
+                            <li>px</li>
+                            <li>pt</li>
+                            <li>pc</li>
+                            <li>in</li>
+                            <li>cm</li>
+                            <li>mm</li>
+                        </ul>
+                    </div>
+                    <div class="unidades">
+                        <ul >
+                            <li>yem</li>
+                            <li>em</li>
+                            <li>vw</li>
+                            <li>vh</li>
+                            <li>vmin</li>
+                            <li>vmax</li>
+                            <li>ex</li>
+                            <li>ch</li>
+                        </ul>
+                    </div>             
+                </div>
+                <div id="unTeoria">
+                    <p>tradicionalmente los navegadores aplican un font-Size de 16 px, entonces podemos es modificar el porcentaje como tal de todo el html y así poder trabajar con los calculos que necesitemos como lo son las medidas rem</p>
+                    <p>Una forma de hacer esto es aplicando un estilo sobre el html, como lo es el siguiente:</p>
+                    <pre class="code">
+                        html{
+                            font-size: 62.5%;
+                        }                    
+                    </pre>
+                    <p>Esta propiedad debe de tratarse con cuidado, y aplicarla al inicio del proyecto, para evitar inconvenientes de medidas</p>
+                    <p>Si 1 rem equivale a 16px, por defecto en el navegador:
+                        si hacemos una regla de 3 donde cambiamos el 100% que equivale a 16px a que 1rem sea igual a 10px, entonces el resultado sería que el 62.5% sería igual a 10px, cambiando la propiedad que hiimos en css de font-size: 100px a font-size: 62.5%</p>
+                    </p>
+
+                </div>
+            </Section>            
+        </article> 
     </section>
 </body>
 </html>
