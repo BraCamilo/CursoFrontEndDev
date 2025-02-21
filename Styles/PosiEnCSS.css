@@ -1,0 +1,118 @@
+@import "/Styles/Colors.css";
+
+#PosicionamientoDefinitivo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemposTitle{
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid white;
+}
+
+#gridposicion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    color: var(--textLight);
+    gap: 5px;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    
+}
+.itemposTeoria{
+    width: 100%;
+    height: 200px;
+    border: 2px solid white;   
+    overflow: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.itemposFigura{
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    width: 100%;    
+    box-sizing: border-box;
+}
+.It1{
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+}
+.It2{
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+}
+.It3{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+}
+
+.RelativeFigure .It1{
+    position: relative;   
+    top: 10px;
+    left: 20px;
+
+}
+.itemposFiguraAbsolute{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    width: 100%;    
+    box-sizing: border-box;
+}
+
+.AbsoluteFigure .It1{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.StickyFigure{
+    position:relative
+}
+
+.StickyFigure .It1{
+    position: sticky;
+    top: 0px;
+}
+
+
+
+
+@media screen and (max-width: 790px){
+    #gridposicion{
+        grid-template-columns: 1fr;
+    }
+
+    .itemposTeoria{
+        width: 100%;
+        height: 200px;
+        border: 2px solid white;   
+        overflow: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    
+}
